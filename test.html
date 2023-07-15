@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Code Editor</title>
+  <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="tabs">
+      <div class="toggle-button" id="toggleButton">
+        <div class="toggle-icon"></div>
+      </div>
+      <div class="tab active" data-tab="html">HTML</div>
+      <div class="tab" data-tab="css">CSS</div>
+      <div class="tab" data-tab="js">JS</div>
+      <div class="tab" data-tab="result">Result</div>
+    </div>
+    <div class="code-editor-container">
+      <div class="code-editor" id="htmlEditor" data-mode="html" contenteditable="true"></div>
+      <div class="code-editor" id="cssEditor" data-mode="css" contenteditable="true"></div>
+      <div class="code-editor" id="jsEditor" data-mode="javascript" contenteditable="true"></div>
+      <div class="live-view">
+        <iframe class="result-iframe" id="resultIframe" style="border: none;"></iframe>
+      </div>
+    </div>
+  </div>
+  <script src="test.js"></script>
+</body>
+
+</html>

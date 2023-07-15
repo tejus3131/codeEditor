@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #1e1e1e;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  background-color: #252525;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: #fff;
+  overflow: auto;
+}
+
+.tab.active {
+  border-color: #007bff;
+}
+
+.toggle-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: #007bff;
+  margin-right: 10px;
+}
+
+.toggle-icon {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.code-editor-container {
+  display: flex;
+  flex: 1;
+  overflow: auto; /* Allow content overflow within the code editor container */
+}
+
+.code-editor {
+  flex: 1;
+  height: 100%;
+  padding: 20px;
+  font-size: 14px;
+  color: #fff;
+  white-space: pre;
+  background-color: #2d2d2d;
+  border-right: 1px solid #888;
+  overflow: auto;
+}
+
+.live-view {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto; /* Allow content overflow within the live view */
+}
+
+.result-iframe {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
